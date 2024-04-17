@@ -1,0 +1,45 @@
+:root
+	--accent: cornflowerblue
+	--white: color-mix(in srgb, #fff 97%, var(--accent) 3%)
+	--black: color-mix(in srgb, #000 97%, var(--accent) 3%)
+	--gray: color-mix(in srgb, #808080 97%, var(--accent) 3%)
+
+	--color: var(--black)
+	--background: var(--white)
+	
+	@media(prefers-color-scheme: dark)
+		color-scheme: light dark
+
+		--color: var(--white)
+		--background: var(--black)
+	
+$accent: var(--accent)
+$black: var(--black)
+$gray: var(--gray)
+$white: var(--white)
+
+$color: var(--color)
+$background: var(--background)
+
+$white-100: color-mix(in srgb, var(--white) 25%, var(--accent) 75%)
+$white-200: color-mix(in srgb, var(--white) 50%, var(--accent) 50%)
+$white-300: color-mix(in srgb, var(--white) 75%, var(--accent) 25%)
+$white-400: color-mix(in srgb, var(--white) 90%, var(--accent) 10%)
+
+$gray-100: color-mix(in srgb, var(--gray) 25%, var(--accent) 75%)
+$gray-200: color-mix(in srgb, var(--gray) 50%, var(--accent) 50%)
+$gray-300: color-mix(in srgb, var(--gray) 75%, var(--accent) 25%)
+$gray-400: color-mix(in srgb, var(--gray) 90%, var(--accent) 10%)
+
+$black-100: color-mix(in srgb, var(--black) 25%, var(--accent) 75%)
+$black-200: color-mix(in srgb, var(--black) 50%, var(--accent) 50%)
+$black-300: color-mix(in srgb, var(--black) 75%, var(--accent) 25%)
+$black-400: color-mix(in srgb, var(--black) 90%, var(--accent) 10%)
+
+$desktop: 1600px
+$tablet: 1024px
+$mobile: 680px
+$line: max(2px, 0.1em)
+
+$ease: 200ms ease
+$shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, .03)

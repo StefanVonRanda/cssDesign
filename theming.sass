@@ -1,0 +1,41 @@
+::selection
+	background: $accent
+	color: $background
+
+::-webkit-scrollbar
+	width: 8px
+	height: 8px
+
+::-webkit-scrollbar-track
+	background: $background
+
+::-webkit-scrollbar-thumb
+	background: $color
+	border: 2px solid $background
+	border-radius: 100vmax
+
+*
+	outline-color: color-mix(in srgb, $accent 30%, $background 70%)
+
+body
+	background: $background
+	color: $color
+
+a
+	text-decoration: none
+	color: inherit
+	transition: color $ease
+
+	@include hocus
+		color: $accent
+	
+button
+	border: unset
+	background: $color
+	color: $background
+	width: fit-content
+	transition: background $ease, color $ease
+
+	@include hocus
+		background: $accent
+		color: $white

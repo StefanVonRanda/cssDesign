@@ -1,0 +1,88 @@
+.contain
+	width: min(var(--desktop), 100% - 2rem) // would use $gap, if sass wasn't buggy
+	margin-inline: auto
+
+.hide
+	display: none
+	&-mobile
+		@include mobile
+			display: none !important
+	&-tablet
+		@include tablet
+			display: none !important
+	&-tablet-down
+		@include tablet-down
+			display: none !important
+	&-desktop
+		@include desktop
+			display: none !important
+
+.block
+	display: block
+	&-mobile
+		@include mobile
+			display: block !important
+	&-tablet
+		@include tablet
+			display: block !important
+	&-tablet-down
+		@include tablet-down
+			display: block !important
+	&-desktop
+		@include desktop
+			display: block !important
+	
+.inline
+	display: inline
+	&-mobile
+		@include mobile
+			display: inline !important
+	&-tablet
+		@include tablet
+			display: inline !important
+	&-tablet-down
+		@include tablet-down
+			display: inline !important
+	&-desktop
+		@include desktop
+			display: inline !important
+	
+.flex
+	display: flex
+	align-items: center
+	&-mobile
+		@include mobile
+			display: flex !important
+			align-items: center
+	&-tablet
+		@include tablet
+			display: flex !important
+			align-items: center
+	&-tablet-down
+		@include tablet-down
+			display: flex !important
+			align-items: center
+	&-desktop
+		@include desktop
+			display: flex !important
+			align-items: center
+		
+.grid
+	display: grid
+	align-items: center
+	&-mobile
+		@include mobile
+			display: grid !important
+			align-items: center
+	&-tablet
+		@include tablet
+			display: grid !important
+			align-items: center
+	&-tablet
+		@include tablet
+			display: grid !important
+			align-items: center
+	&-desktop
+		@include desktop
+			display: grid !important
+			align-items: center
